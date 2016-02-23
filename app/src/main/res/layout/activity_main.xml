@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.plubits.pokerspeedrange.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:gravity="top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="false"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="15dip">
+
+            <RelativeLayout
+                android:id="@+id/no_antes_legend"
+                android:layout_width="35dip"
+                android:layout_height="20dip"
+                android:layout_marginLeft="15dip"
+                android:background="@color/no_antes_value_color"></RelativeLayout>
+            <TextView
+                android:id="@+id/no_antes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/no_antes_legend"
+                android:textColor="@color/legend_color"
+                android:textStyle="bold"
+                android:text="@string/no_antes"/>
+
+            <RelativeLayout
+                android:id="@+id/antes_legend"
+                android:layout_width="35dip"
+                android:layout_height="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+id/no_antes_text"
+                android:background="@color/antes_value_color"></RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/antes_legend"
+                android:textColor="@color/legend_color"
+                android:textStyle="bold"
+                android:text="@string/antes"/>
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_dialog_info"
+            android:tint="@color/colorPrimary"
+            app:fabSize="mini"
+            android:adjustViewBounds="false" />
+
+</android.support.design.widget.CoordinatorLayout>

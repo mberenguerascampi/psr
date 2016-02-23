@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#005673</color>
+    <color name="colorPrimaryDark">#002f40</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="table_background_color">#005673</color>
+    <color name="radioButton_unselected">#E2E2E2</color>
+    <color name="positionList_radioButton_selected">#000000</color>
+    <color name="blindsList_radioButton_selected">#424242</color>
+    <color name="percentList_radioButton_selected">#757575</color>
+    <color name="no_antes_value_color">#43eb15</color>
+    <color name="antes_value_color">#cbf9ac</color>
+    <color name="unselected_value_color">#50e6e9eb</color>
+    <color name="table_text_color">#000000</color>
+    <color name="table_text_color_unselected">#50000000</color>
+    <color name="grid_cell_border">#000000</color>
+    <color name="grid_unselected_cell_border">#50000000</color>
+    <color name="legend_color">#ffffff</color>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Poker Speed Range</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="call_tab_title">PUSH</string>
+    <string name="call_to_push_tab_title">CALL TO PUSH</string>
+    <string name="antes">ANTES</string>
+    <string name="no_antes">NO ANTES</string>
+</resources>

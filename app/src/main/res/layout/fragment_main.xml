@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.plubits.pokerspeedrange.MainActivity$PlaceholderFragment">
+
+    <RadioGroup
+        android:id="@+id/positionsRadioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:elevation="4dip"
+        android:outlineProvider="bounds">
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/blindsRadioGroup"
+        android:layout_below="@+id/positionsRadioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:outlineProvider="bounds">
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/percentRadioGroup"
+        android:layout_below="@+id/blindsRadioGroup"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:elevation="4dip"
+        android:outlineProvider="bounds">
+    </RadioGroup>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_below="@+id/percentRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="13"
+        android:layout_marginTop="4dp"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:background="@color/table_background_color"
+        android:elevation="4dip"
+        />
+
+</RelativeLayout>
